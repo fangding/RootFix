@@ -8,6 +8,7 @@ import com.pudding.fixcore.reboot.dex.DexV14;
 import com.pudding.fixcore.reboot.dex.DexV19;
 import com.pudding.fixcore.reboot.dex.DexV23;
 import com.pudding.fixcore.reboot.dex.DexV24;
+import com.pudding.fixcore.reboot.dex.DexV25;
 import com.pudding.fixcore.reboot.dex.DexV4;
 import com.pudding.fixcore.reboot.dex.ZipUtil;
 import com.pudding.fixcore.reboot.so.SoV23;
@@ -99,7 +100,9 @@ public final class RootFix {
             Exception {
         if (!files.isEmpty()) {
             ClassLoader classLoader = loader;
-            if (Build.VERSION.SDK_INT >= 24) {
+            if (Build.VERSION.SDK_INT >= 25) {
+                DexV25.install(loader, files, dexDir);
+            } else if (Build.VERSION.SDK_INT >= 24) {
                 DexV24.install(loader, files, dexDir);
             } else if (Build.VERSION.SDK_INT >= 23) {
                 DexV23.install(classLoader, files, dexDir, isHotfix);
