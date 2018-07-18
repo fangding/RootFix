@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_restar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="加载热更文件，重启生效" />
+
+            <Button
+                android:id="@+id/button_runtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="加载热更文件，立即生效" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
