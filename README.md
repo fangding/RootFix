@@ -28,7 +28,10 @@ RootFix是一个在针对Android应用的热更新框架。
 
 ## 支持情况
 
-目前RootFix 支持 Android 5.0~ 8.1 的 系统；Android O的支持正在计划中。但是，本项目已经在SDK类和App的项目中使用过, 搭配使用我的另外一个开源项目PuddingResReLoader(此项目支持res、assets、libs等资源的插件化读取),目前仅仅是个人用途，欢迎给我提 issue :)
+目前RootFix 支持 Android 5.0~ 8.1 的 系统；Android O的支持正在计划中。但是，本项目已经在SDK类和App的项目中使用过, 搭配使用我的另外一个开源项目PuddingResReLoader更易于使用,
+目前仅仅是个人用途，欢迎给我提 issue :)
+
+PuddingResReLoader：此项目支持res、assets、libs等资源的插件化读取,还在完善和新增功能，尚未开源
 
 Android版本支持情况：
 
